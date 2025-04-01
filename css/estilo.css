@@ -2,12 +2,35 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    scrollbar-width: thin;
-    scrollbar-color: red;
+    box-sizing: border-box;/* */
+    scrollbar-width: thin;/* */
+    scrollbar-color: red;/* */
 }
 
 body{
     background-color: black;
+}
+
+html[ data-theme='dark'] .logo{
+    filter: invert(1);
+}
+
+/* Tudo que vai ficar dentro do Id*/
+#header{
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+width: 100%;
+padding: 10px 20px;
+align-items: center;
+
+}
+
+/*o . serve para chamar  classe */
+.logo{
+    width: 56px; 
+    height: 56px;
+
+
 
 }
