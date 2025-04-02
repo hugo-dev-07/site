@@ -1,3 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
+
+/*
+Root Font padrão
+
+STIX Two Text:
+font-family: "STIX Two Text", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+Gilda Display:
+font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+  PT Serif:
+    font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+---------------------------
+   font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+-----------------------------
+font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+-----------------------------
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+*/
+
+
+
+
+
 /* Regras css */
 *{
     margin: 0;
@@ -39,17 +78,18 @@ align-items: center;
 /*o . serve para chamar  classe */
 .logo{
     width: 56px; 
-    height: 56px;
+    height: auto;
 }
 
 .header-toggle{
     display: flex;
     justify-content: flex-end;
+    min-width: 30%;
 }
 
 #toggletheme{
     color:yellow;/* cor de texto*/
-    font-size: 50px; /*tamanho da fonte*/
+    font-size: 30px; /*tamanho da fonte*/
     cursor: pointer;
     transition: all 0.6s ease-in-out; 
 }
@@ -64,8 +104,20 @@ align-items: center;
     width: 100%;
 }
 
-.mwnu-link{
+.menu-link{
     display: flex;
     text-transform: uppercase;
     align-items: center;
 }
+
+.menu-link{
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.menu-texto{
+    font-size: 12px;
+    text-transform: uppercase;
+    
+}
+
