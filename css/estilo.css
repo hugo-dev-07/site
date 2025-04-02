@@ -11,6 +11,16 @@ body{
     background-color: black;
 }
 
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+
+}
+
 html[ data-theme='dark'] .logo{
     filter: invert(1);
 }
@@ -30,7 +40,32 @@ align-items: center;
 .logo{
     width: 56px; 
     height: 56px;
+}
 
+.header-toggle{
+    display: flex;
+    justify-content: flex-end;
+}
 
+#toggletheme{
+    color:yellow;/* cor de texto*/
+    font-size: 50px; /*tamanho da fonte*/
+    cursor: pointer;
+    transition: all 0.6s ease-in-out; 
+}
 
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu-item{
+    width: 100%;
+}
+
+.mwnu-link{
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
 }
