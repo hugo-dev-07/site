@@ -126,7 +126,7 @@ font-family: Arial, Helvetica, sans-serif;
     display: none;
 
 }
-menu-mobile .menu-link {
+.menu-mobile .menu-link {
     flex-direction: column;
     justify-content: center;
     align-items: center;
