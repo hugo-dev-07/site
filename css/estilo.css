@@ -47,11 +47,12 @@ font-family: "PT Serif", serif;
 }
 
 body{
-    background-color: black;
+    background-color: rgb(39, 39, 39);
+    color: whitesmoke;
 }
 
 a{
-    color: whitesmoke;
+    color:white;
     text-decoration: none;
 }
 
@@ -66,12 +67,12 @@ html[ data-theme='dark'] .logo{
 
 /* Tudo que vai ficar dentro do Id*/
 #header{
-display: flex;
-flex-flow: row wrap;
-justify-content: space-between;
-width: 100%;
-padding: 10px 20px;
-align-items: center;
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+    padding: 10px 20px;
 
 }
 
@@ -125,12 +126,38 @@ font-family: Arial, Helvetica, sans-serif;
     display: none;
 
 }
+menu-mobile .menu-link {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;      
+}
 
-.menu-mobile .menu-link{
- flex-direction: column;
- justify-content: center;
- align-items: center;
- padding: 8px 16px;
+.menu-mobile {
+    position: fixed;
+    bottom: 0;
+    width: 100vw; /* VW = viewPort - Width */
+    justify-content: space-between;
+    border-top: 1px solid #989898;
+    z-index: 1; /*  */
+}
+
+.menu-link.active .icone-link,
+.menu-link.active .menu-texto,
+.menu-link:hover .icone-link,
+.menu-link:hover .menu-texto {
+    color: red;
+    font-weight: 600;
+}
+
+.icone-link,
+.menu-texto {
+    color: #6a6a6a;
+    font-weight: 600;
+}
+
+.icone-link {
+    font-size: 25px;
 }
 
 
