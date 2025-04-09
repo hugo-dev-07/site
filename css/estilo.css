@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
 
+/*Variáveis de cores*/
+/* Definir cores tema Dark*/
+
+:root,
+:root[data-theme="dark"]{
+    --fundo-header:red;
+}
+
+/*Definir cores do tema light*/
+:root[data-theme="light"]{
+    --fundo-header: green;
+}
+
+
+
+
 /*
 Root Font padrão
 
@@ -95,6 +111,7 @@ strong{
     align-items: center; 
     width: 100%;
     padding: 10px 20px;
+    
 
 }
 
@@ -162,6 +179,7 @@ font-family: Arial, Helvetica, sans-serif;
     justify-content: space-between;
     border-top: 1px solid #989898;
     z-index: 1; /*  */
+    background-color: rgb(39, 39, 39);
 }
 
 .menu-link.active .icone-link,
@@ -225,14 +243,43 @@ border: 1px solid white;
 }
 
 .btn:hover{
-    transform: scale(2);
+    transform: scale(1.01);
     transition: all ease-in-out .4s;
+}
+
+.btn:hover span,
+.btn:hover i {
+    color: red;
+}
+
+.icon-social{
+    font-size: 25px;
+    color: #989898;
+}
+
+.icon-social:hover{
+    color: rgb(39, 39, 39);
+    background: #ffffff;
+}
+
+
+/* Estruturas */
+
+/* ATUALIZAÇÕES */
+#home{
+    padding: 40px 16px;
 }
 
 /* CSS Responsivo*/
 /*telas apartir de 768*/
 
 @media(min-width:768px){
+    #header{
+        background-color:var(--fundo-header);
+        position: fixed;
+        border-bottom: 1px solid #989898;
+        padding: 16px 96px;
+    }
     .header-nav{
         display: flex;
     }
@@ -242,8 +289,24 @@ border: 1px solid white;
     }
 
     .nav-mobile{
-
         display: none;
+    }
+    #home{ /* Atualização futura*/
+        padding: 128px 96px 64px ;
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        align-items:  flex-start;
+    }
+
+}
+
+/*1200px*/
+@media(min-width: 1200px){
+    #home{
+        padding: 160px 96px 32px;
     }
 
 }
