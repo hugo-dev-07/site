@@ -54,6 +54,15 @@ Inter:
     scrollbar-width: thin;
 }
 
+html[data-theme='dark'] .logo {
+    filter: invert(1);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
 body {
     background-color: var(--bg);
     color: var(--color);
@@ -71,9 +80,6 @@ ul {
 }
 
 
-html[data-theme='dark'] .logo {
-    filter: invert(1);
-}
 
 h1 {
     font-size: 40px;
