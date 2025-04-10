@@ -1,0 +1,337 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Patua+One&display=swap');
+
+/* Variaveis para cores */
+
+/* Definir cores tema Dark */
+:root,
+:root[data-theme="dark"] {
+
+    --bg: rgb(39, 39, 39); /* Cor Fundo */
+    --color: rgb(206, 206, 206); /* Cor Textos */
+    --hover: rgb(243, 243, 243);
+        
+}
+
+/* Definir cores tema Light */
+:root[data-theme="light"] {
+
+    --bg: rgb(206, 206, 206); /* Cor Fundo */
+    --color: rgb(39, 39, 39); /* Cor Textos */
+    --hover: rgb(5, 5, 5);
+}
+
+
+
+/* 
+
+Root Font
+
+Patua one:
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+
+Outfit:
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+Inter:
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+*/
+
+
+/* reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*  */
+    scrollbar-width: thin;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--color);
+}
+
+
+a {
+    color: var(--color);
+    text-decoration: none;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+html[data-theme='dark'] .logo {
+    filter: invert(1);
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 200;
+    font-family: "Outfit", sans-serif;
+    letter-spacing: 3px;
+}
+
+p,
+li, 
+span {
+  font-size: 18px; 
+}
+p {
+    text-align: justify;
+    font-family: "Inter", sans-serif;
+}
+
+strong {
+    font-weight: 800;
+}
+
+/* Header */
+#header {
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.logo {
+    width: 80px;
+    height: auto; 
+}
+
+
+.header-toggle {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+#toggleTheme {
+    color: var(--color);
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu-item {
+    width: 100%;
+}
+
+
+.menu-link {
+    display: flex;
+
+}
+
+
+.menu-texto{
+    font-size: 12px; 
+    text-transform: uppercase;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+}
+
+
+.header-nav {
+    display: none;
+}
+
+.menu-mobile .menu-link {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;      
+}
+
+.menu-mobile {
+    position: fixed;
+    bottom: 0;
+    width: 100vw; /* VW = viewPort - Width */
+    justify-content: space-between;
+    border-top: 1px solid var(--color);
+    z-index: 1; /*  */
+    background-color: var(--bg);
+}
+
+.menu-link.active .icone-link,
+.menu-link.active .menu-texto,
+.menu-link:hover .icone-link,
+.menu-link:hover .menu-texto {
+    color: var(--hover);
+    font-weight: 600;
+}
+
+.icone-link,
+.menu-texto {
+    color: #6a6a6a;
+    font-weight: 600;
+}
+
+.icone-link {
+    font-size: 25px;
+}
+/* Fim CSS do Menu */
+
+/* Home / Main */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.video iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: transparent;
+    width: 100%;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    border: 1px solid var(--color);
+}
+
+.btn-primary:hover {
+    border: 1px solid var(--bg);
+}
+
+.btn span,
+.btn i {
+    color: var(--color);
+    font-size: 16px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    transition: all ease-in-out .4s;
+}
+
+.btn:hover span,
+.btn:hover i {
+    color: var(--hover);
+}
+
+.icon-social {
+    font-size: 25px;
+    color: #989898;
+}
+
+.icon-social:hover {
+    color: var(--hover);
+}
+
+
+
+
+/* Estrutura */
+
+/* ATUALIZAÇÕES FUTURAS */
+#home, .projetos {
+    padding: 40px 16px;
+}
+
+
+
+/* CSS Responsivo */
+@media (min-width: 768px) {
+    #header {
+        background-color: var(--bg);
+        position: fixed;
+        border-bottom: 1px solid #989898;
+        padding: 16px 96px;
+    }
+    .header-nav {
+        display: flex;
+    }
+
+    .header-nav,
+    .header-toggle {
+        min-width: 25%;
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+    
+    #home, .projetos { /* Atualização futura */
+        padding: 128px 96px 64px;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+/* 1200px */
+@media (min-width: 1200px) {
+    #home {
+        padding: 160px 96px 32px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 65px;
+    }
+    
+    p, span, li {
+        font-size: 20px;
+    }
+} /* fim 1200px */
+
+@media (min-width: 1400px) {
+    h1 {
+        font-size: 100px;
+    }
+    h2 {
+        font-size: 70px;
+    }
+    .projetos {
+        padding: 160px 240px 64px;
+    }
+}
+
+
+

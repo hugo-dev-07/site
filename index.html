@@ -2,175 +2,229 @@
 <html lang="pt-br" data-theme="dark">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Link CSS -->
-  <link rel="stylesheet" href="css/estilo.css">
-  <!-- titulo -->
-  <title>Portfólio | Hugo</title>
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <!-- Fav icon -->
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio | Gustavo </title>
 
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Link com o CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
 </head>
 
 <body>
-  <!-- header = cabeçalho -->
 
-  <header id="header">
+    <!-- header = cabeçalho -->
+    <header id="header">
 
-    <nav class="header-nav"><!-- menu desktop -->
+        <!-- menu desktop -->
+        <nav class="header-nav">
+            <ul class="menu menu-principal">
 
-      <ul class="menu menu-principal">
-        <li class="menu-item">
-          <a href="#home" class="menu-link active">
-            <span class="menu-texto">home</span>
-          </a>
-        </li>
+                <li class="menu-item">
+                    <a href="#home" class="menu-link active">
+                        <span class="menu-texto"> home </span>
+                    </a>
+                </li>
 
-        <li class="menu-item">
-          <a href="#Projetos" class="menu-link">
-            <span class="menu-texto">Projetos</span>
-          </a>
-        </li>
+                <li class="menu-item">
+                    <a href="#projetos" class="menu-link">
+                        <span class="menu-texto"> projetos </span>
+                    </a>
+                </li>
 
-        <li class="menu-item">
-          <a href="#Sobre" class="menu-link">
-            <span class="menu-texto">Sobre</span>
-          </a>
-        </li>
+                <li class="menu-item">
+                    <a href="#sobre" class="menu-link">
+                        <span class="menu-texto"> sobre </span>
+                    </a>
+                </li>
 
-        <li class="menu-item">
-          <a href="#Contato" class="menu-link">
-            <span class="menu-texto">Contato</span>
-          </a>
-        </li>
-      </ul>
+                <li class="menu-item">
+                    <a href="#contato" class="menu-link">
+                        <span class="menu-texto"> contato </span>
+                    </a>
+                </li>
 
-    </nav><!-- fim menu desktop -->
+            </ul>
+        </nav> <!-- Fim Menu desktop -->
 
-    <!-- Logo -->
-    <div>
-      <a href="#Home">
-        <img src="img/logo.png" alt="" class="logo">
+        <!-- Logo -->
+        <div>
+            <a href="#home">
+                <img src="img/logo.png" alt="" class="logo">
+            </a>
+        </div>
 
-      </a>
+        <!-- Trocar cor Tema -->
+        <div class="header-toggle">
+            <i class="bi bi-sun" id="toggleTheme"></i>
+        </div>
 
-    </div>
+    </header>
 
-    <!-- Trocar cor do tema -->
+    <!-- Menu Mobile -->
+    <nav class="nav-mobile">
+        <ul class="menu menu-mobile">
 
-    <div class="header-toggle">
-      <i class="bi bi-sun" id="toggletheme"></i>
+            <li class="menu-item">
+                <a href="#home" class="menu-link active">
+                    <i class="icone-link bi bi-house"></i>
+                    <span class="menu-texto"> home </span>
+                </a>
+            </li>
 
-    </div>
+            <li class="menu-item">
+                <a href="#projetos" class="menu-link">
+                    <i class="icone-link bi bi-images"></i>
+                    <span class="menu-texto"> projetos </span>
+                </a>
+            </li>
 
+            <li class="menu-item">
+                <a href="#sobre" class="menu-link">
+                    <i class="icone-link bi bi-person"></i>
+                    <span class="menu-texto"> sobre </span>
+                </a>
+            </li>
 
-  </header>
-  <!-- Indentação Shift + Alt + F -->
-  <!-- Comentario shit+ + alt + A -->
+            <li class="menu-item">
+                <a href="#contato" class="menu-link">
+                    <i class="icone-link bi bi-envelope"></i>
+                    <span class="menu-texto"> contato </span>
+                </a>
+            </li>
 
-  <!-- Menu mobile -->
-  <nav class="nav-mobile">
+        </ul>
 
-    <ul class=" menu menu-mobile">
+    </nav>
 
-      <li class="menu-item">
-        <a href="#home" class="menu-link active">
-          <i class="icone-link bi bi-house"></i>
-          <span class="menu-texto">home</span>
-        </a>
-      </li>
+    <main id="home">
 
-      <li class="menu-item">
-        <a href="#Projetos" class="menu-link">
-          <i class=" icone-link bi bi-images"></i>
-          <span class="menu-texto">Projetos</span>
-        </a>
-      </li>
+        <div class="main-content">
 
-      <li class="menu-item">
-        <a href="#Sobre" class="menu-link">
-          <i class="icone-link bi bi-person"></i>
-          <span class="menu-texto">Sobre</span>
-        </a>
-      </li>
+            <h1>
+                <strong>
+                    Soluções Digitais &
+                </strong>
+                Desenvolvimento Front-End.
+            </h1>
 
-      <li class="menu-item">
-        <a href="#Contato" class="menu-link">
-          <i class="icone-link bi bi-envelope"></i>
-          <span class="menu-texto">Contato</span>
-        </a>
-      </li>
+            <p>Gustavo Feriani - SP, Desenvolvedor e Instrutor Front-End.</p>
 
-    </ul>
-  </nav>
-
-
-  <main id="home">
-
-    <div class="main-content">
-
-      <h1>
-        <strong>
-          Soluções Digitais &
-        </strong>
-        Desenvolvimento Front-End.
-      </h1>
-
-      <p>Hugo Leite - SP, Desenvolvedor e Instrutor Front-End.</p>
-
-      <ul class="menu menu-social">
-        <li>
-          <a href="https://instagram.com.br/huguinho07__" target="_blank"> <!-- colocar o link do instagram -->
-            <i class="icon-social bi bi-instagram"></i>
-          </a>
-        </li>
-
-        <li>
-          <a href="https://github.com/hugo-dev-07/site" target="_blank"> <!-- colocar o link do instagram -->
-            <i class="icon-social bi bi-github"></i>
-          </a>
-        </li>
-
-        <li>
-          <a href="https://www.linkedin.com/in/hugo-leite" target="_blank"> <!-- colocar o link do instagram -->
-            <i class="icon-social bi bi-linkedin"></i>
-          </a>
-        </li>
-
-        <li>
-          <a href="https://tiktok.com.br/huguinho_" target="_blank"> <!-- colocar o link do instagram -->
-            <i class="icon-social bi bi-tiktok"></i>
-          </a>
-        </li>
-
-        <a href="https://pt-br.facebook.com/hugo.guary.1 " target="_blank"> <!-- colocar o link do instagram -->
-          <i class="icon-social bi bi-facebook"></i>
-        </a>
-
-      </ul>
-      <a href="#projetos">
-        <button class="btn btn-primary">
-          <span>Ver Projetos</span>
-          <i class="bi bi-arrow-down-right"></i>
-        </button>
-      </a>
-      
-      <div class="video">
-        <iframe src="https://www.youtube.com/embed/5nEyjYn9_LI?list=PL590L5WQmH8dsxxz7ooJAgmijwOz0lh2H" 
-        title="HACKING GOOGLE: Series Trailer (:30)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-
-    </div> <!-- Fim main content -->
+            <ul class="menu menu-social">
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="icon-social bi bi-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="icon-social bi bi-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="icon-social bi bi-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="icon-social bi bi-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="icon-social bi bi-twitch"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="icon-social bi bi-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
 
 
-  </main>
+            <a href="#projetos">
+                <button class="btn btn-primary">
+                   <span> Ver Projetos </span>
+                   <i class="bi bi-arrow-down-right"></i>
+                </button>
+            </a>
+            
+            <div class="video">
+    
+                <iframe src="https://www.youtube.com/embed/5nEyjYn9_LI?list=PL590L5WQmH8dsxxz7ooJAgmijwOz0lh2H" title="HACKING GOOGLE: Series Trailer (:30)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+            </div>
 
-    <script src="../js/script.js"></script>
+        </div> <!-- Fim main content -->
+
+
+    </main>
+
+    <!-- Projetos -->
+    <section id="projetos" class="projetos">
+
+        <h2>Projetos</h2>
+
+        <div class="projetos-container">
+
+            <!-- Projeto 1 -->
+            <article class="projeto-card">
+
+                <img src="img/games-store.jpg" alt="" class="card-img">
+
+                <div class="card-body">
+
+                    <h3 class="card-title">Games Store</h3>
+                    <p class="card-description">
+                        Venda de Games Digitais
+                    </p>
+
+                    <ul class="card-lista">
+                        
+                        <li class="card-item">
+                            <i class="bi bi-chevron-double-right"></i>
+                            Jogos para PC
+                        </li>
+
+                        <li class="card-item">
+                            <i class="bi bi-chevron-double-right"></i>
+                            Jogos para Mac
+                        </li>
+
+                        <li class="card-item">
+                            <i class="bi bi-chevron-double-right"></i> 
+                            Jogos Mobile
+                        </li>
+
+                      
+
+                    </ul>
+
+                </div>
+                
+
+            </article>
+
+
+
+        </div>
+
+    </section>
+
+    
+
+
+
+    <script src="js/script.js"> </script>
+
 </body>
 
 </html>

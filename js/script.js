@@ -1,20 +1,15 @@
-const toggletheme = document.getElementById("toggletheme"); // Corrigido para "toggletheme"
+
+const toggleTheme = document.getElementById("toggleTheme");
 const rootHtml = document.documentElement;
 
-function changeTheme() {
-    const currentTheme = rootHtml.getAttribute("data-theme");
-    
-    // Alternar entre temas
-    if (currentTheme === "dark") {
-        rootHtml.setAttribute("data-theme", "light");
-    } else {
-        rootHtml.setAttribute("data-theme", "dark");
-    }
+function changeTheme () {
 
-    // Alternar as classes dos ícones
-    toggletheme.classList.toggle("bi-sun");
-    toggletheme.classList.toggle("bi-moon-stars");
+    const currentTheme = rootHtml.getAttribute("data-theme");
+
+    currentTheme === "dark" ? rootHtml.setAttribute("data-theme", "light") : rootHtml.setAttribute("data-theme", "dark");
+
+    toggleTheme.classList.toggle("bi-sun");
+    toggleTheme.classList.toggle("bi-moon-stars");
 }
 
-// Adicionando o evento para trocar o tema quando clicado
-toggletheme.addEventListener("click", changeTheme);
+toggleTheme.addEventListener("click", changeTheme);
