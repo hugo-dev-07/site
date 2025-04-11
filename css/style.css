@@ -10,6 +10,7 @@
     --bg: rgb(39, 39, 39); /* Cor Fundo */
     --color: rgb(206, 206, 206); /* Cor Textos */
     --hover: rgb(243, 243, 243);
+    --sombra:rgb(226, 226, 226);
         
 }
 
@@ -19,6 +20,7 @@
     --bg: rgb(206, 206, 206); /* Cor Fundo */
     --color: rgb(39, 39, 39); /* Cor Textos */
     --hover: rgb(5, 5, 5);
+    --sombra: rgb(37, 37, 37);
 }
 
 
@@ -86,6 +88,24 @@ h1 {
     font-weight: 200;
     font-family: "Outfit", sans-serif;
     letter-spacing: 3px;
+}
+
+h2{
+    font-size: 35px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+  
+}
+
+h3{
+    font-size: 30px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    text-align: left;
+    text-transform: uppercase;
 }
 
 p,
@@ -267,6 +287,56 @@ strong {
 
 
 /* Estrutura */
+/*Projetos*/
+
+.projetos{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.projetos-container{
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.projeto-card{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.card-img{
+    width: 100%;
+    pointer-events: none;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0px 0px 50px purple;
+}
+
+.card-description{
+    font-family:"Inter", sans-serif ;
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.icon-list{
+    color: blue;
+    font-size: 14px;
+}
+
+.card-item{
+    margin-left: 10px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
 
 /* ATUALIZAÇÕES FUTURAS */
 #home, .projetos {
@@ -306,7 +376,18 @@ strong {
         align-items: flex-start;
     }
 
-}
+} /*fim 768*/
+
+/*inicio 992*/
+@media (min-width: 992px){
+    .projeto-card{
+        flex-direction: row;
+    }
+
+    .card-img{
+        width: 55%;
+    }
+} /*fim 992*/
 
 /* 1200px */
 @media (min-width: 1200px) {
