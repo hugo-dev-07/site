@@ -106,6 +106,16 @@ h3 {
     text-transform: uppercase;
 }
 
+h4 {
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    text-align: left;
+}
+
+span {
+    font-family: "Outfit", sans-serif;
+}
 
 p,
 li,
@@ -344,8 +354,6 @@ strong {
     align-items: start;
 }
 
-
-
 /* ATUALIZAÇÕES FUTURAS */
 #home,
 .projetos,
@@ -354,19 +362,18 @@ strong {
 }
 
 /* Sobre */
-.sobre{
+.sobre {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-.sobre-perfil{
-
-        width: 100%;
-        pointer-events: none;
-        border-radius: 50%;
-        border: 8pc solid #cacaca;
-
+.sobre-perfil {
+    width: 100%;
+    pointer-events: none;
+    border-radius: 50%;
+    border: 8px solid #cacaca;
+    object-position: center;
 }
 
 .sobre-content1,
@@ -376,49 +383,59 @@ strong {
     align-items: flex-start;
     gap: 32px;
     margin-bottom: 80px;
-
-
 }
 
-.sobre-descricao{
-
-    display:flex;
+.sobre-descricao {
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 20px;
 }
 
 .sobre-skills,
-.sobre-icones{
-    display:flex;
+.sobre-icones {
+    display: flex;
     align-items: center;
     gap: 20px;
 }
 
 .sobre-skills i,
-.sobre-icones i{
+.sobre-icones i {
     font-size: 20px;
     color: #05a2e5;
 }
 
-.sobre-content2 .col1,
-.sobre-content2 .col2{
+.sobre-content2 .col1, 
+.sobre-content2 .col2 {
     display: flex;
     flex-direction: column;
     text-align: justify;
     gap: 32px;
-
 }
 
-.sobre-content2 .col1 .row1,
-.sobre-content2 .col1 .row2{
+.sobre-content2 .col1 .row1, 
+.sobre-content2 .col1 .row2 {
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: 10px;
 }
 
+.row2 .sobre-lista li {
+    margin-bottom: 10px;
+}
 
-
+/* accordion */
+.accordion-header{ /* botton */
+    width: 100%;
+    border: 1px solid var(--color);
+    display: flex;
+    background:transparent;
+    cursor: pointer;
+    justify-content: space-between;
+    padding: 8px 16px;
+    align-items: center;
+    transition: ease-in-out .5s;
+}
 
 
 /* CSS Responsivo */
@@ -446,7 +463,8 @@ strong {
     }
 
     #home,
-    .projetos {
+    .projetos,
+    .sobre {
         /* Atualização futura */
         padding: 128px 96px 64px;
     }
@@ -482,15 +500,26 @@ strong {
     .card-img {
         width: 55%;
     }
-    .sobre{
+
+    .sobre {
         gap: 10px;
     }
+
     .sobre-content1,
-    .sobre-content2{
+    .sobre-content2 {
         display: grid;
         grid-template-columns: 40% 60%;
+        justify-content: flex-start;
         gap: 64px;
     }
+
+    .sobre-descricao h2 {
+        text-align: left;
+    }
+    .descricao-button {
+        justify-content: flex-start;
+    }
+
 }
 
 /* 1200px */
@@ -513,7 +542,7 @@ strong {
         font-size: 20px;
     }
 
-    .decricao-button .btn{
+    .descricao-button .btn {
         width: auto;
     }
 }
