@@ -437,6 +437,41 @@ strong {
     transition: ease-in-out .5s;
 }
 
+.accordion-header span,
+.accordion-header i {
+    color: var(--color);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+.accordion-body{
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border:  1px solid var(--color);
+    display: none; 
+}
+
+.accordion-item.active  .accordion-header{
+    background: var(--color);
+
+}
+
+.accordion-item.active  .accordion-header span,
+.accordion-item.active .accordion-header{
+    color: var(--bg);
+
+}
+
+.accordion-item.active .accordion-body {
+  display: flex;
+
+}
+
+
+
+
 
 /* CSS Responsivo */
 /* min-width = a partir de -->  */
